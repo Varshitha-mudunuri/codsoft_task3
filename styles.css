@@ -1,0 +1,94 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fdf6f0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.calculator {
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    max-width: 320px;
+    border: 2px solid #e5c2b8;
+    transition: transform 0.3s ease-in-out;
+}
+
+.calculator:hover {
+    transform: scale(1.02);
+}
+
+.title {
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #9c6f74;
+}
+
+#display {
+    width: 290px;
+    height: 80px;
+    font-size: 2rem;
+    text-align: right;
+    margin-bottom: 15px;
+    border: 2px solid #e5c2b8;
+    padding: 12px;
+    border-radius: 10px;
+    background: #fff7f2;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 18px;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    background: #f5d5cb; 
+    transition: all 0.3s ease-in-out;
+    color: #5a3e3e;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(250, 212, 192, 0.6);
+}
+
+button:hover {
+    background: #f0c3b6;
+    transform: translateY(-3px);
+}
+
+.zero {
+    grid-column: span 2;
+}
+
+/* Special colors for C and = buttons */
+.clear {
+    background: #ffaaa5; 
+    color: white;
+}
+
+.clear:hover {
+    background: #ff8c8c;
+}
+
+.equal {
+    background: #8ed1fc; 
+    color: white;
+}
+
+.equal:hover {
+    background: #84bae4;
+}
+
+/* Button press effect */
+button:active {
+    transform: scale(0.95);
+}
